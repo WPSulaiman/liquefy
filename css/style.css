@@ -323,7 +323,7 @@ header {
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
@@ -338,7 +338,7 @@ nav {
 nav ul {
     line-height: 60px;
     list-style: none;
-    background: rgba(240, 228, 236, 0.253);
+    background: rgba(255, 255, 255, 0);
     overflow: hidden;
     color: rgb(41, 29, 29);
     padding: 0;
@@ -360,7 +360,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
