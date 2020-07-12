@@ -333,7 +333,7 @@
             background: #000;
         }
         nav.black ul {
-           background: rgba(148, 209, 230, 0.5);
+            background: rgba(148, 209, 230, 0.5);
         }
         .showing {
             max-height: 34em;
@@ -348,11 +348,14 @@
             display: block;
         }
     }
+    /* Forms
+      ========================================================================== */
     /* COLUMN SETUP
       ========================================================================== */
     
     .container {
-        min-width: 992px !important;
+        width: 992px !important;
+        margin: 0 auto;
     }
     
     .row {
