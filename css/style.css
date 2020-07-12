@@ -295,7 +295,7 @@
     }
     
     nav.black ul {
-        background: rgba(67, 60, 250, 0.5);
+        background: #000;
     }
     
     nav ul li {
@@ -333,7 +333,7 @@
             background: #000;
         }
         nav.black ul {
-            background: rgba(67, 60, 250, 0.5);;
+            background: #000;
         }
         .showing {
             max-height: 34em;
