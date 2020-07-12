@@ -10,7 +10,53 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/Javascript.js"></script>
     <title>Coprate Company</title>
+
+
+
+
+<style>
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+
+
+
+
+
+
+
 </head>
+
+
 
 <body>
     <!-- header nnvigation Logo start here -->
@@ -38,21 +84,37 @@
         <main>
             <!-- Main Content of the page start here -->
 
+
+
+
+<h3 align="center">Using CSS to style an HTML Form</h3>
+
+<div>
   <form action="/action_page.php">
-  <label for="fname"> Name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-     <label for="F/Name">F/Name:</label><br>
-  <input type="text" id="F/Name" name="F/Name"><br>
-    <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email"><br>
-    <label for="Phone No">Phone No:</label><br>
-  <input type="text" id="Phone No" name="Phone No"><br>
-      <label for="Address">Address:</label><br>
-  <input type="text" id="Address" name="Address" ><br>
+    <label for="name">Name</label><br>
+    <input type="text" id="Name" name="Name" placeholder="Enter Your Name.."><br>
 
+    <label for="f/name">F/Name</label><br>
+    <input type="text" id="F/Name" name="F/Name" placeholder="Enter Your F/Name.."><br>
 
-  <input type="submit" value="Submit">
+        <label for="Email">Email</label><br>
+    <input type="text" id="Email" name="Email" placeholder="Enter Your Email.."><br>
+
+    <label for="Phone No">Phone No</label><br>
+    <input type="text" id="Phone No" name="Phone No" placeholder="Enter Your Phone No.."><br>
+
+    <label for="country">Country</label><br>
+    <select id="country" name="country">
+     <option value="usa">Pakistan</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      
+    </select>
+  
+    <input type="submit" value="Submit">
   </form>
+</div>
 
 
             <p></p>
