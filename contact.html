@@ -10,10 +10,40 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/Javascript.js"></script>
     <title>Coprate Company</title>
-
+    <style>
+        input[type=text],
+        select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
 </head>
-
-
 
 <body>
     <!-- header nnvigation Logo start here -->
@@ -35,13 +65,6 @@
                     </ul>
                 </div>
             </nav>
-            <div class="hero-image2">
-                <div class="hero-text">
-                  <h1 style="font-size:50px">Contact Us</h1>
-                  <p>Contact Me? :)</p>
-                  <button>Hire Us</button>
-                </div>
-              </div>
         </header>
         <!-- #masthead -->
         <!-- header nnvigation Logo END here -->
@@ -49,39 +72,37 @@
             <!-- Main Content of the page start here -->
 
 
-<h3 align="center">Using CSS to style an HTML Form</h3>
 
 
-  <form action="/action_page.php" align="center">
-    
-    <input type="text" id="Name" name="Name" placeholder="Enter Your Name.."><br>
+            <h3 align="center">Using CSS to style an HTML Form</h3>
 
-    
-    <input  type="text" id="F/Name" name="F/Name" placeholder="Enter Your F/Name.."><br>
+            <div>
+                <form action="/action_page.php">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="Name" name="Name" placeholder="Enter Your Name.."><br>
 
-       
-    <input type="text" id="Email" name="Email" placeholder="Enter Your Email.."><br>
+                    <label for="f/name">F/Name</label><br>
+                    <input type="text" id="F/Name" name="F/Name" placeholder="Enter Your F/Name.."><br>
 
-    
-    <input type="text" id="Phone No" name="Phone No" placeholder="Enter Your Phone No.."><br>
+                    <label for="Email">Email</label><br>
+                    <input type="text" id="Email" name="Email" placeholder="Enter Your Email.."><br>
 
-    
-    <select id="country" name="country">
+                    <label for="Phone No">Phone No</label><br>
+                    <input type="text" id="Phone No" name="Phone No" placeholder="Enter Your Phone No.."><br>
+
+                    <label for="country">Country</label><br>
+                    <select id="country" name="country">
      <option value="usa">Pakistan</option>
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
       
     </select>
-  <br>
-    <input type="submit" value="Submit" align="center">
-  </form>
 
-
-
-
-
-            <p>hello hy</p>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <p></p>
         </main>
         <!-- Main Content of the page END here -->
         <footer>
