@@ -1408,8 +1408,8 @@ nav ul li a {
 
 /*Below code is for Hero image OR Banner with black overlay effect and some text overlay*/
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-about-us.jpg");
+.hero-img-index-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-index.jpg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1417,8 +1417,17 @@ nav ul li a {
     position: auto;
 }
 
-.hero-image2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/thought-catalog-505eectW54k-unsplash.jpg");
+.hero-img-contact-us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/hero-contact.jpg");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: auto;
+}
+
+.hero-img-about-us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-about.jpg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
