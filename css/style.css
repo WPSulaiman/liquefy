@@ -1377,6 +1377,12 @@ nav ul li a {
 /*------------------------------Style of AboutUs Page ENDED------------------------------------*/
 
 
+
+
+
+
+
+/*------------------------------Style of Contact Us Page Start------------------------------------*/
 /* CONTACT US Style Start
 =====================================================================*/
 
@@ -1411,5 +1417,16 @@ img {
 }
 
 
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/w1.jpg");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: auto;
+}
+
+
 /* CONTACT US Style End
 =====================================================================*/
+/*------------------------------Style of Contact Us Page ENDED------------------------------------*/
