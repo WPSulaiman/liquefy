@@ -13,283 +13,6 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        /* Add a gray background color with some padding */
-        
-        body {
-            font-family: Arial;
-            background: white;
-        }
-        /* Header/Blog Title */
-        
-        .header {
-            padding: 30px;
-            font-size: 40px;
-            text-align: center;
-            background: white;
-        }
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-        
-        .leftcolumn {
-            float: left;
-            width: 75%;
-        }
-        /* Right column */
-        
-        .rightcolumn {
-            float: left;
-            width: 25%;
-            padding-left: 20px;
-        }
-        /* Fake image */
-        
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-        }
-        /* Add a card effect for articles */
-        
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        /* Clear floats after the columns */
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        /* Footer */
-        
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ddd;
-            margin-top: 20px;
-        }
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        
-        @media screen and (max-width: 800px) {
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
-        /*============== Responsive Footer desgin start ===================*/
-        
-        @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        
-        html {
-            background-color: #eaf0f2;
-        }
-        
-        body {
-            font: 16px/1.6 Arial, sans-serif;
-        }
-        
-        header {
-            text-align: center;
-            padding-top: 100px;
-            margin-bottom: 0px;
-        }
-        
-        header h1 {
-            font: normal 32px/1.5 'Open Sans', sans-serif;
-            padding-bottom: 16px;
-        }
-        
-        header h2 {
-            color: #F05283;
-        }
-        
-        header span {
-            color: #3F71EA;
-        }
-        /* The footer is fixed to the bottom of the page */
-        
-        footer {
-            position: fixed;
-            bottom: 0;
-        }
-        
-        @media (max-height:800px) {
-            footer {
-                position: static;
-            }
-            header {
-                padding-top: 0px;
-            }
-        }
-        
-        .footer-distributed {
-            background-color: #2c292f;
-            box-sizing: border-box;
-            width: 100%;
-            text-align: left;
-            font: bold 16px sans-serif;
-            padding: 50px 50px 60px 50px;
-            margin-top: 80px;
-        }
-        
-        .footer-distributed .footer-left,
-        .footer-distributed .footer-center,
-        .footer-distributed .footer-right {
-            display: inline-block;
-            vertical-align: top;
-        }
-        /* Footer left */
-        
-        .footer-distributed .footer-left {
-            width: 30%;
-        }
-        
-        .footer-distributed h3 {
-            color: #ffffff;
-            font: normal 36px 'Cookie', cursive;
-            margin: 0;
-        }
-        /* The company logo */
-        
-        .footer-distributed .footer-left img {
-            width: 30%;
-        }
-        
-        .footer-distributed h3 span {
-            color: #e0ac1c;
-        }
-        /* Footer links */
-        
-        .footer-distributed .footer-links {
-            color: #ffffff;
-            margin: 20px 0 12px;
-        }
-        
-        .footer-distributed .footer-links a {
-            display: inline-block;
-            line-height: 1.8;
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        .footer-distributed .footer-company-name {
-            color: #8f9296;
-            font-size: 14px;
-            font-weight: normal;
-            margin: 0;
-        }
-        /* Footer Center */
-        
-        .footer-distributed .footer-center {
-            width: 35%;
-        }
-        
-        .footer-distributed .footer-center i {
-            background-color: #33383b;
-            color: #ffffff;
-            font-size: 25px;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 42px;
-            margin: 10px 15px;
-            vertical-align: middle;
-        }
-        
-        .footer-distributed .footer-center i.fa-envelope {
-            font-size: 17px;
-            line-height: 38px;
-        }
-        
-        .footer-distributed .footer-center p {
-            display: inline-block;
-            color: #ffffff;
-            vertical-align: middle;
-            margin: 0;
-        }
-        
-        .footer-distributed .footer-center p span {
-            display: block;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 2;
-        }
-        
-        .footer-distributed .footer-center p a {
-            color: #e0ac1c;
-            text-decoration: none;
-            ;
-        }
-        /* Footer Right */
-        
-        .footer-distributed .footer-right {
-            width: 30%;
-        }
-        
-        .footer-distributed .footer-company-about {
-            line-height: 20px;
-            color: #92999f;
-            font-size: 13px;
-            font-weight: normal;
-            margin: 0;
-        }
-        
-        .footer-distributed .footer-company-about span {
-            display: block;
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        
-        .footer-distributed .footer-icons {
-            margin-top: 25px;
-        }
-        
-        .footer-distributed .footer-icons a {
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-            background-color: #33383b;
-            border-radius: 2px;
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 35px;
-            margin-right: 3px;
-            margin-bottom: 5px;
-        }
-        /* Here is the code for Responsive Footer */
-        /* You can remove below code if you don't want Footer to be responsive */
-        
-        @media (max-width: 880px) {
-            .footer-distributed .footer-left,
-            .footer-distributed .footer-center,
-            .footer-distributed .footer-right {
-                display: block;
-                width: 100%;
-                margin-bottom: 40px;
-                text-align: center;
-            }
-            .footer-distributed .footer-center i {
-                margin-left: 0;
-            }
-        }
-        /*============== Responsive Footer desgin End ===================*/
-    </style>
 
 
 </head>
@@ -309,7 +32,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about us.html">About</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -330,59 +53,51 @@
             <!-- Main Content of the page start here -->
 
 
-            <div class="header">
+            <div class="big-name">
                 <h2>Lastest Post</h2>
             </div>
+            <div class="container-fluid">
 
-            <div class="row">
-                <div class="leftcolumn">
-                    <div class="card">
-                        <h2 align="center">TITLE HEADING</h2>
-                        <h5 align="center">Title description, Dec 7, 2017</h5>
-                        <div style="height:350px; padding-left: 15%"><img src="images/w2.jpg" style="width: 700px; height:350px"></div>
-                        <p align="center">Some text..</p>
-                        <p align="center">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <div class="card">
+                            <h2 align="center">TITLE Sallo blog</h2>
+                            <h5 align="center">Title description, Dec 7, 2017</h5>
+                            <div style="height:350px; padding-left: 15%"><img src="images/w2.jpg" style="width: 700px; height:350px"></div>
+                            <p align="center">Some text..</p>
+                            <p align="center">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="card">
-                        <h2 align="center">TITLE HEADING</h2>
-                        <h5 align="center">Title description, Sep 2, 2017</h5>
-                        <div style="height:350px; padding-left: 15%"><img src="images/w2.jpg" style="width: 700px; height:350px"></div>
-                        <p align="center">Some text..</p>
-                        <p align="center">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-                </div>
-                <div class="rightcolumn">
-                    <div class="card">
-                        <h2>About Me</h2>
-                        <div class="fakeimg" style="height:100px;">Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                    </div>
-                    <div class="card">
-                        <h3>Popular Post</h3>
-                        <div class="fakeimg">Image</div><br>
-                        <div class="fakeimg">Image</div><br>
-                        <div class="fakeimg">Image</div>
-                    </div>
-                    <div class="card">
-                        <h3>Follow Me</h3>
-                        <p>Some text..</p>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="card">
+                            <h2>About Me</h2>
+                            <div class="fakeimg" style="height:100px;">Image</div>
+                            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                        </div>
+                        <div class="card">
+                            <h3>Popular Post</h3>
+                            <div class="fakeimg">Image</div><br>
+                            <div class="fakeimg">Image</div><br>
+                            <div class="fakeimg">Image</div>
+                        </div>
+                        <div class="card">
+                            <h3>Follow Me</h3>
+                            <p>Some text..</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-
 
 
             <div class="footer">
-                <header>
+                <div class="footer-header">
+                    fpp
                     <h1 style=" color: #3F71AE;"> Responsive Footer </h1>
                     <h2>Have a look</h2>
                     <h2><span>On Below Footer</span></h2>
                     <img src="images/w3.jpg" style="height: 500px;">
-                </header>
+                </div>
 
                 <!-- The content of your page would go here. -->
 
@@ -434,13 +149,10 @@
 
 
 
-            <p>Hello</p>
+
         </main>
         <!-- Main Content of the page END here -->
-        <footer>
-            <!--Footer start here -->
-        </footer>
-        <!--Footer of the END here -->
+
 </body>
 
 </html>
